@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
@@ -18,8 +17,6 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -182,9 +179,22 @@
     border-radius: 10px;
     border-style: var(--tw-border-style);
     border-width: 1px;
-    padding-inline: calc(var(--spacing) * 3);
+    padding-inline: calc(var(--spacing) * 5);
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
+  .box {
+    margin-inline: auto;
+    height: calc(var(--spacing) * 100);
+    width: calc(var(--spacing) * 150);
+    border-radius: 10px;
+    background-color: #0c0c0ca1;
+    padding: calc(var(--spacing) * 15);
+    text-align: center;
+    color: var(--color-white);
   }
   .btn {
     margin-inline: auto;
@@ -221,15 +231,6 @@
   }
   .hidden {
     display: none;
-  }
-  .box {
-    height: calc(var(--spacing) * 100);
-    width: calc(var(--spacing) * 150);
-    border-radius: 10px;
-    background-color: #0c0c0ca1;
-    padding: calc(var(--spacing) * 15);
-    text-align: center;
-    color: var(--color-white);
   }
   .h-7 {
     height: calc(var(--spacing) * 7);

@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @utility box{
-  @apply bg-[#0c0c0ca1] rounded-[10px] w-150 h-100 p-15 text-center text-white
+  @apply bg-[#0c0c0ca1] rounded-[10px] w-150 h-100 p-15 mx-auto text-center text-white
 }
 @utility btn{
   @apply border cursor-pointer  px-4 py-3 bg-[#7754] w-40 mx-auto rounded-[7px] bg-[linear-gradient(to_right,#ff0080,#0080ff)] 
             text-xl font-bold hover:bg-[linear-gradient(to_right,#0080ff,#ff0080)] 
 }
 @utility inputStyle {
-  @apply border w-100 h-15 px-3 mx-auto rounded-[10px] font-semibold
+  @apply border w-100 h-15 lg:px-3 px-5 mx-auto rounded-[10px] font-semibold
 }
 
 .pop{
