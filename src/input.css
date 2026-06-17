@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@utility box{
+  @apply bg-[#0c0c0ca1] rounded-[10px] w-150 h-100 p-15 text-center text-white
+}
+@utility btn{
+  @apply border cursor-pointer  px-4 py-3 bg-[#7754] w-40 mx-auto rounded-[7px] bg-[linear-gradient(to_right,#ff0080,#0080ff)] 
+            text-xl font-bold hover:bg-[linear-gradient(to_right,#0080ff,#ff0080)] 
+}
+@utility inputStyle {
+  @apply border w-100 h-15 px-3 mx-auto rounded-[10px] font-semibold
+}
+
+.pop{
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop{
+  0%{ 
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1); 
+  }
+}
+
+@utility bgAdd{
+  @apply  bg-[url('../image/winner.jpg')] bg-cover bg-center 
+}
