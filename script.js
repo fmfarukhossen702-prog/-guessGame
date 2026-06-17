@@ -89,7 +89,7 @@ btn3.addEventListener('click',()=>{
       let secend = inputText3.value;
       box3.classList.add('hidden');
       box4.classList.remove('hidden');
-      heading4.innerHTML = "Match the number and win "; 
+      heading4.innerHTML = "Welcome to Our Game, " + secend + "<br>" + " Match the number and win "; 
   }
 
 })
